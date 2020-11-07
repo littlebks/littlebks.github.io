@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="home">
-  <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">小人书</h1>
+    <!-- <a class="rss-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
+    --><h1 class="page-heading">小人书</h1>
 
   <ul class="post-list">
     {% for post in paginator.posts %}
@@ -20,7 +20,7 @@ layout: default
           {%   else %}{{ post.content | lstrip | split: "
 " | first }}{% endif %}
           <p>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">读吧 &raquo;</a>
           </p>
         </div>
       </li>
@@ -32,13 +32,13 @@ layout: default
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">PREV</a>
   {% else %}
-    <span class="previous">PREV</span>
+    <span class="previous">过去</span>
   {% endif %}
   <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">NEXT</a>
   {% else %}
-    <span class="next ">NEXT</span>
+    <span class="next ">未来</span>
   {% endif %}
 </div>
 
