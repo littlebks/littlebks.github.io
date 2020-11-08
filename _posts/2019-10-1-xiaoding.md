@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "小丁"
+title:  "勒索"
 date:   2019-10-1
 categories:  杂文
 permalink: /archivers/xiaoding
