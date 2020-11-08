@@ -32,7 +32,7 @@
         h1, h2 {
         	margin-bottom: 15px;
             margin-top:  30px;
-            margin-left: 30px;
+            text-align: center;
             color: #1f33c1
         }
 
@@ -45,6 +45,11 @@
             @include media-query($on-palm) {
 		        margin: 0 -10px;
             }
+        }
+
+        p {
+        	  margin-left:  25px;
+        	  margin-right: 25px;
         }
 
         .middle-image {
