@@ -9,7 +9,8 @@ description: >
 # Your information
 email: bks.at.gb@gmail.com
 author: 小人书
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+# avatar: "//www.gravatar.com/avatar/_md5?d=mm&s=135"
+avatar: /assets/img/xiaoren.jpg
 profile: 写小人书的小人物
 github_username:  littlebks
 #twitter_username: twitter_username

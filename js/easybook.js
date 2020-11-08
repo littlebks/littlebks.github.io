@@ -1,6 +1,6 @@
 /*!
  * EasyBook Jekyll Theme Javascript
- * 
+ *
  * http://laobubu.github.io/jekyll-theme-EasyBook
  * https://github.com/laobubu/jekyll-theme-EasyBook
  *
@@ -157,6 +157,7 @@ function PalmSidebar() {
         is_palm_mode = getComputedStyle(header).position !== 'static';
         header_placeholder.style.height = is_palm_mode ? (h.bottom - h.top + 'px') : '0px'
     }
+
     function toggleSidebar(e) {
         if (/expand-sidebar/.test(pcw.className)) {
             pcw.className = pcw.className.replace(/\s*expand-sidebar\s*/, ' ');
@@ -167,8 +168,19 @@ function PalmSidebar() {
         }
         setTimeout(s1, 200);
     }
+
+    function hideSidebar(e) {
+        pcw.className = pcw.className.replace(/\s*expand-sidebar\s*/, ' ');
+        header.className = header.className.replace(/\s*expand-sidebar\s*/, ' ');
+
+        setTimeout(s1, 200);
+    }
+
     s1();
+
     document.getElementById('sidebar-toggle').addEventListener('click', toggleSidebar, false);
+    document.getElementById('side-panel').addEventListener('mouseleave', hideSidebar, false);
+
     window.addEventListener('resize', s1, false);
 }
 
