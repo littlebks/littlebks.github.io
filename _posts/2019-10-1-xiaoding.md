@@ -3,7 +3,7 @@ layout: post
 title:  "小丁"
 date:   2019-10-1
 categories:  杂文
-permalink: /archivers/小丁
+permalink: /archivers/xiaoding
 ---
 
 
